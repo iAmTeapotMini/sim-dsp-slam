@@ -1,0 +1,50 @@
+# === PyCharm & JetBrains IDEs ===
+.idea/
+*.iml
+*.iws
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.elc
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.tox/
+.coverage
+.cache
+htmlcov/
+
+# === R ===
+.Rhistory
+.RData
+.Ruserdata
+*.RData
+*.Rhistory
+.Rproj.user/
+.Rapp.history
+
+# === System Files (OS junk) ===
+.DS_Store
+Thumbs.db
