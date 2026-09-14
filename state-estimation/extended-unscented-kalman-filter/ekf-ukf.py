@@ -222,8 +222,8 @@ if __name__ == '__main__':
 
     # Отображение графиков
     plt.figure(figsize=(10, 6))
-    plt.plot(ekf_x, ekf_y, label="EKF Estimates", marker='+')
-    plt.plot(ukf_x, ukf_y, label="UKF Estimates", marker='.')
+    plt.plot(ekf_x, ekf_y, label="EKF Estimates")
+    plt.plot(ukf_x, ukf_y, label="UKF Estimates")
     plt.legend()
     plt.title('Robot Localization Result: EKF vs UKF')
     plt.xlabel('X coordinate')

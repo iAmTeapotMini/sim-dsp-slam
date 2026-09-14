@@ -22,4 +22,5 @@ $$R_t^x = \begin{pmatrix} 0.1 & 0 & 0 \\ 0 & 0.1 & 0 \\ 0 & 0 & 0.01 \end{pmatri
 $$Q_t = \begin{pmatrix} 0.01 & 0 & 0 & \dots \\ 0 & 0.01 & 0 & \dots \\ 0 & 0 & 0.01 & \dots \\ \vdots & \vdots & \vdots & \ddots \end{pmatrix} \in \mathbb{R}^{2m \times 2m}$$
 Где $m$ — число наблюдаемых в данный момент ориентиров.
 
-
+## 3. Результат
+![Траектория EKF-SLAM](ekf-slam.png)
