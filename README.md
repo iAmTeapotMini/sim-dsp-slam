@@ -5,18 +5,16 @@
 
 ---
 
-## Структура проекта 
-### 1. Оценивание состояния и фильтрация (State Estimation)
+## 1. Оценивание состояния и фильтрация (State Estimation)
 * **[Particle Filter (Локализация по датчикам)](./state-estimation/particle-filter-sensor/)**
 * **[Extended Kalman Filter (EKF)](./state-estimation/extended-kalman-filter/)**
 * **[Extended Kalman Filter (EKF) и Unscented Kalman Filter (UKF)](./state-estimation/extended-unscented-kalman-filter/)**
 * **[Rao-Blackwellized Particle Filter (RBPF)](./state-estimation/rbpf/)**
 * **[Error-State Kalman Filter (ESKF)](./state-estimation/error-state-kalman-filter/)**
 
-### 2. Локализация и картирование (SLAM)
+## 2. Локализация и картирование (SLAM)
 * **[Occupancy Grid Mapping](./slam/occupancy-grid-mapping/lab1.ipynb)**
-
-[//]: # (* **[Particle Filter &#40;Локализация по карте&#41;]&#40;./state-estimation/particle-filter-map/&#41;**)
+* **[Particle Filter (Локализация по карте)](./state-estimation/particle-filter-map/)**
 * **[EKF-SLAM](./slam/ekf-slam/)**
 * **[FastSLAM](./slam/fast-slam/)**
 * **[GraphSLAM](./slam/graph-slam/)**
