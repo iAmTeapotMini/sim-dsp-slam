@@ -53,13 +53,13 @@
 Ниже представлены результаты пошаговой оптимизации, визуализирующие выравнивание графа на каждой итерации алгоритма.
 
 ### 1. Simulation (Pose-Pose)
-![Оптимизация Simulation Pose-Pose](results/gs-data1.gif)
+![Оптимизация Simulation Pose-Pose](results/gs-pose2pose.gif)
 
 ### 2. Intel Dataset (Реальные позы)
-![Оптимизация Intel Dataset](results/gs-data1.gif)
+![Оптимизация Intel Dataset](results/gs-intel.gif)
 
 ### 3. Simulation (Pose-Landmark)
-![Оптимизация Simulation Pose-Landmark](results/gs-data1.gif)
+![Оптимизация Simulation Pose-Landmark](results/gs-pose-landmark.gif)
 
 ### 4. DLR Dataset (Реальные ориентиры)
-![Оптимизация DLR Dataset](results/gs-data1.gif)
+![Оптимизация DLR Dataset](results/gs-dlr.gif)
