@@ -14,7 +14,7 @@
 
 ## 2. Локализация и картирование (SLAM)
 * **[Occupancy Grid Mapping](./slam/occupancy-grid-mapping/lab1.ipynb)**
-* **[Particle Filter (Локализация по карте)](./state-estimation/particle-filter-map/)**
+* **[Particle Filter (Локализация по карте)](./slam/particle-filter-map)**
 * **[EKF-SLAM](./slam/ekf-slam/)**
 * **[FastSLAM](./slam/fast-slam/)**
 * **[GraphSLAM](./slam/graph-slam/)**
