@@ -21,19 +21,36 @@
 ## Математическая формулировка
 
 ### 1. Функции ошибки
-* **Ограничение «Поза-Поза» ($e_{ij}$):**
+**Ограничение «Поза-Поза» ($e_{ij}$):**
+  
   $$e_{ij}(x_i, x_j) = \begin{pmatrix} R_{ij}^T (R_i^T (t_j - t_i) - t_{ij}) \\ \theta_j - \theta_i - \theta_{ij} \end{pmatrix}$$
-* **Ограничение «Поза-Ориентир» ($e_{il}$):**
+  
+**Ограничение «Поза-Ориентир» ($e_{il}$):**
+
   $$e_{il}(x_i, x_l) = R_i^T (x_l - t_i) - z_{il}$$
 
+
 ### 2. Якобианы (Матрицы производных)
+
 Якобианы функций ошибки по состояниям узлов рассчитываются следующим образом:
-* **Для ограничений Поза-Поза:**
-  $$A_{ij} = \frac{\partial e_{ij}}{\partial x_i} = \begin{pmatrix} -R_{ij}^T R_i^T & R_{ij}^T \frac{\partial R_i^T}{\partial \theta_i} (t_j - t_i) \\ \mathbf{0}^T & -1 \end{pmatrix}, \quad B_{ij} = \frac{\partial e_{ij}}{\partial x_j} = \begin{pmatrix} R_{ij}^T R_i^T & \mathbf{0} \\ \mathbf{0}^T & 1 \end{pmatrix}$$
-* **Для ограничений Поза-Ориентир:**
-  $$A_{il} = \frac{\partial e_{il}}{\partial x_i} = \begin{pmatrix} -R_i^T & \frac{\partial R_i^T}{\partial \theta_i}(x_l - t_i) \end{pmatrix}, \quad B_{il} = \frac{\partial e_{il}}{\partial x_l} = R_i^T$$
+
+**Для ограничений Поза-Поза:**
+
+$$
+A_{ij} = \frac{\partial e_{ij}}{\partial x_i} = \begin{pmatrix} -R_{ij}^T R_i^T & R_{ij}^T \frac{\partial R_i^T}{\partial \theta_i} (t_j - t_i) \\ \mathbf{0}^T & -1 \end{pmatrix}, \quad B_{ij} = \frac{\partial e_{ij}}{\partial x_j} = \begin{pmatrix} R_{ij}^T R_i^T & \mathbf{0} \\ \mathbf{0}^T & 1 \end{pmatrix}
+$$
+
+**Для ограничений Поза-Ориентир:**
+
+$$
+A_{il} = \frac{\partial e_{il}}{\partial x_i} = \begin{pmatrix} -R_i^T & \frac{\partial R_i^T}{\partial \theta_i}(x_l - t_i) \end{pmatrix}, \quad B_{il} = \frac{\partial e_{il}}{\partial x_l} = R_i^T
+$$
 
 ---
+
+
+
+
 
 ## Оцениваемые датасеты и ожидаемые результаты
 
