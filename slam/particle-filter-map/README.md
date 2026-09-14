@@ -20,18 +20,22 @@
 
 ### 1. Модель движения (Odometry Motion Model)
 На шаге прогноза положение каждой частицы обновляется с учетом шума одометрии:
+
 $$\hat{\delta}_{rot1} = \delta_{rot1} - \mathcal{N}(0, \alpha_1 |\delta_{rot1}| + \alpha_2 \delta_{trans})$$
 $$\hat{\delta}_{trans} = \delta_{trans} - \mathcal{N}(0, \alpha_3 \delta_{trans} + \alpha_4 (|\delta_{rot1}| + |\delta_{rot2}|))$$
 $$\hat{\delta}_{rot2} = \delta_{rot2} - \mathcal{N}(0, \alpha_1 |\delta_{rot2}| + \alpha_2 \delta_{trans})$$
 
 Новые координаты частицы рассчитываются как:
+
 $$x_{new} = x + \hat{\delta}_{trans} \cos(\theta + \hat{\delta}_{rot1})$$
 $$y_{new} = y + \hat{\delta}_{trans} \sin(\theta + \hat{\delta}_{rot1})$$
 $$\theta_{new} = \theta + \hat{\delta}_{rot1} + \hat{\delta}_{rot2} \pmod{[-\pi, \pi]}$$
 
 ### 2. Расчет весов (Measurement Model)
 Вес каждой частицы пропорционален правдоподобию лазерного скана в данной точке пространства:
+
 $$w_{i,t} = \eta \prod_{j=1}^{K} p(z_{t}^j | x_{i,t})$$
+
 Правдоподобие $p(z_{t}^j | x_{i,t})$ извлекается напрямую из **Поля правдоподобия (Likelihood Field)** по координатам конечных точек лазерных лучей.
 
 ### 3. Ресэмплинг (Low Variance Resampling)
