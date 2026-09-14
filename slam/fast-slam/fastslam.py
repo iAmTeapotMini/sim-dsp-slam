@@ -1,11 +1,9 @@
+import math
+
 from scipy.stats import multivariate_normal
 
-from lab3.main import angle_normalization
-from read_data import read_world, read_sensor_data
 from misc_tools import *
-import numpy as np
-import math
-import copy
+from read_data import read_world, read_sensor_data
 
 
 def normalize_angle(angle):
@@ -116,8 +114,8 @@ def eval_sensor_model(sensor_data, particles):
     #calculate particle weight
 
     #sensor noise
-    Q_t = np.array([[0.1, 0],
-                    [0, 0.1]])
+    Q_t = np.array([[1, 0],
+                    [0, 0.01]])
 
     #measured landmark ids and ranges
     ids = sensor_data['id']

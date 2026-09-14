@@ -14,8 +14,9 @@
 * **[Error-State Kalman Filter (ESKF)](./state-estimation/error-state-kalman-filter/)**
 
 ### 2. Локализация и картирование (SLAM)
-* **[Occupancy Grid Mapping](./slam/occupancy-grid-mapping/)**
-* **[Particle Filter (Локализация по карте)](./state-estimation/particle-filter-map/)**
+* **[Occupancy Grid Mapping](./slam/occupancy-grid-mapping/lab1.ipynb)**
+
+[//]: # (* **[Particle Filter &#40;Локализация по карте&#41;]&#40;./state-estimation/particle-filter-map/&#41;**)
 * **[EKF-SLAM](./slam/ekf-slam/)**
 * **[FastSLAM](./slam/fast-slam/)**
 * **[GraphSLAM](./slam/graph-slam/)**
